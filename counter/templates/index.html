@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login V1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v1/images/icons/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://colorlib.com/etc/lf/Login_v1/vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://colorlib.com/etc/lf/Login_v1/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/vendor/animate/animate.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://colorlib.com/etc/lf/Login_v1/vendor/css-hamburgers/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/vendor/select2/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/css/util.css">
+    <link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/css/main.css">
+    <style>
+        .wrap-login100 {
+            padding: 80px 90px 80px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt style="font-size: 16pt;">
+                    {% for i in text %}
+                    {{ i }}<br>
+                    {% endfor %}
+                    단어수: {{ text|length}}<br>
+                    공백포함 글자수: {{ a }}<br>
+                    공백제외 글자수: {{ b }}
+                    <!-- <img src="https://colorlib.com/etc/lf/Login_v1/images/img-01.png" alt="IMG"> -->
+                </div>
+                <form class="login100-form validate-form" action="result" method="get">
+                    <span class="login100-form-title">
+                        Word Counter
+                    </span>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="text" name="text" placeholder="텍스트를 입력하세요">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                    <div class="container-login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
+                            전송
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://colorlib.com/etc/lf/Login_v1/vendor/jquery/jquery-3.2.1.min.js"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+
+    <script src="https://colorlib.com/etc/lf/Login_v1/vendor/bootstrap/js/popper.js"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+    <script src="https://colorlib.com/etc/lf/Login_v1/vendor/bootstrap/js/bootstrap.min.js"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+
+    <script src="https://colorlib.com/etc/lf/Login_v1/vendor/select2/select2.min.js"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+
+    <script src="https://colorlib.com/etc/lf/Login_v1/vendor/tilt/tilt.jquery.min.js"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+    <script type="7c20e74b7708dc9ce8720027-text/javascript">
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+    <script async src="https://colorlib.com/etc/lf/Login_v1/https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+    <script type="7c20e74b7708dc9ce8720027-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+    <script src="https://colorlib.com/etc/lf/Login_v1/js/main.js"
+        type="7c20e74b7708dc9ce8720027-text/javascript"></script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="7c20e74b7708dc9ce8720027-|49" defer=""></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    {% for i in text %}
+    {{ i }}<br>
+    {% endfor %}
+    단어수: {{ text|length}}
+    <form action="result" method="get">
+        <textarea name="text" id="text" name="text"></textarea>
+        <button type="submit" class="btn btn-primary">전송</button>
+    </form>
+    
+</body>
+</html> -->
